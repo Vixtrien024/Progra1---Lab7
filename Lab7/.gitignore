@@ -1,0 +1,65 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Visual C++ cache / IntelliSense
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+
+# Build output
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# C/C++ compiler and linker artifacts
+*.obj
+*.o
+*.iobj
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ipdb
+*.ilk
+*.idb
+*.ipch
+*.pch
+*.tlog
+*.lastbuildstate
+*.recipe
+*.pgc
+*.pgd
+*.sbr
+*.bsc
+
+# Logs and temp
+*.log
+*.tmp
+*.tmp_proj
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
