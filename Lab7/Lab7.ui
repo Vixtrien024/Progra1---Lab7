@@ -11,45 +11,263 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Lab7</string>
+   <string>Lab 7 - Contactos</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="lblNombre">
-      <property name="text">
-       <string>Nombre</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="txtNombre"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="lblTelefono">
-      <property name="text">
-       <string>Telefono</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="txtTelefono"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>Correo</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="txtCorreo"/>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnGuardar">
-      <property name="text">
-       <string>Guardar</string>
-      </property>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page_3">
+       <widget class="QLineEdit" name="txtCorreo">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>269</y>
+          <width>582</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtNombre">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>70</y>
+          <width>582</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblTelefono">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>100</y>
+          <width>582</width>
+          <height>64</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblNombre">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>1</y>
+          <width>582</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblCorreo">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>200</y>
+          <width>582</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Correo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnGuardar">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>299</y>
+          <width>582</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtTelefono">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>170</y>
+          <width>582</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="paginaHistorial">
+       <widget class="QLabel" name="lblModo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>562</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Historial de contactos</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tablaContactos">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>32</y>
+          <width>562</width>
+          <height>160</height>
+         </rect>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <column>
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Teléfono</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Correo</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="lblEditarNombre">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>110</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtEditarNombre">
+        <property name="geometry">
+         <rect>
+          <x>125</x>
+          <y>198</y>
+          <width>447</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblEditarTelefono">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>110</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Teléfono</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtEditarTelefono">
+        <property name="geometry">
+         <rect>
+          <x>125</x>
+          <y>228</y>
+          <width>447</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblEditarCorreo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>110</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Correo</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtEditarCorreo">
+        <property name="geometry">
+         <rect>
+          <x>125</x>
+          <y>258</y>
+          <width>447</width>
+          <height>24</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnActualizar">
+        <property name="geometry">
+         <rect>
+          <x>125</x>
+          <y>290</y>
+          <width>130</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Actualizar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnEliminar">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>290</y>
+          <width>130</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnRecargar">
+        <property name="geometry">
+         <rect>
+          <x>405</x>
+          <y>290</y>
+          <width>167</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Recargar tabla</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -63,6 +281,20 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuNavegacion">
+    <property name="title">
+     <string>Navegacion</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionRegistrar"/>
+    <addaction name="separator"/>
+    <addaction name="actionHistorial"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditar"/>
+    <addaction name="separator"/>
+    <addaction name="actionEliminar"/>
+   </widget>
+   <addaction name="menuNavegacion"/>
   </widget>
   <widget class="QToolBar" name="toolBar">
    <attribute name="toolBarArea">
@@ -73,6 +305,26 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRegistrar">
+   <property name="text">
+    <string>Registrar</string>
+   </property>
+  </action>
+  <action name="actionHistorial">
+   <property name="text">
+    <string>Historial</string>
+   </property>
+  </action>
+  <action name="actionEditar">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>

@@ -13,8 +13,23 @@ public:
     ~Lab7();
 
 private:
+    enum class Modo { Historial, Editar, Eliminar };
+
     Ui::Lab7Class ui;
     ArchivoContactos archivoContactos;
-    void guardarContacto();
+    Modo modoActual = Modo::Historial;
 
+    void guardarContacto();
+    void mostrarRegistro();
+    void mostrarHistorial();
+    void mostrarEditar();
+    void mostrarEliminar();
+    void cargarTabla();
+    void cargarCamposDesdeFila();
+    void actualizarContacto();
+    void eliminarContacto();
+    void aplicarModo();
+    bool validarDatos(const QString& nombre, const QString& telefono,
+        const QString& correo);
+    void mostrarErrorArchivo(const QString& titulo, const QString& error);
 };

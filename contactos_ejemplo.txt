@@ -1,0 +1,3 @@
+Ana Mora;8888-1111;ana@example.com
+Carlos Rojas;7777-2222;carlos@example.com
+María Solís;6666-3333;maria@example.com
